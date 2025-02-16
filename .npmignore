@@ -6,9 +6,6 @@ tsconfig.json
 *.log
 .env
 
-# Ignore build artifacts (if using a separate `dist/` folder for TypeScript)
-dist/
-
 # Ignore dependency folders
 node_modules/
 package-lock.json

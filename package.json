@@ -1,18 +1,19 @@
 {
   "name": "react-rush",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A CLI tool to quickly set up a React project with Vite, TypeScript, Tailwind CSS, and ShadCN.",
-  "main": "bin/cli.js",
+  "main": "dist/index.js",
   "type": "module",
   "bin": {
     "react-rush": "./bin/cli.js"
   },
   "scripts": {
-    "build": "tsc --outDir bin",
+    "build": "tsc --outDir dist",
     "prepublishOnly": "npm run build"
   },
   "files": [
     "bin/",
+    "dist/",
     "package.json",
     "README.md",
     "LICENSE"

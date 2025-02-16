@@ -1,2 +1,13 @@
-node_modules
+# Ignore Node dependencies
+node_modules/
 package-lock.json
+
+# Ignore build artifacts
+dist/
+
+# Ignore TypeScript cache
+*.tsbuildinfo
+
+# Ignore logs and environment files
+*.log
+.env

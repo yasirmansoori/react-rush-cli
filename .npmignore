@@ -1,0 +1,14 @@
+# Ignore TypeScript source files
+src/
+tsconfig.json
+
+# Ignore config and environment files
+*.log
+.env
+
+# Ignore build artifacts (if using a separate `dist/` folder for TypeScript)
+dist/
+
+# Ignore dependency folders
+node_modules/
+package-lock.json

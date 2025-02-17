@@ -63,6 +63,14 @@ const setupProject = async (projectName: string, options: any) => {
   let installShadcn = options.shadcn ?? false;
   let cleanupProject = options.clean ?? false;
 
+  // Enforce Tailwind installation if ShadCN is selected
+  if (installShadcn && !installTailwind) {
+    console.log(
+      "\n⚠️  ShadCN requires Tailwind CSS. Installing Tailwind by default...\n"
+    );
+    installTailwind = true;
+  }
+
   if (!options.tailwind && !options.shadcn && !options.clean) {
     const responses = await inquirer.prompt([
       {
